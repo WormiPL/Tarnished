@@ -1,0 +1,89 @@
+/* Login website */
+
+body{
+  background-color: #333;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .login_panel{
+    width: 300px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 15px;
+    border: 2px solid #c7c7c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .login_panel:hover{
+    border: 2px solid rgb(85, 125, 255);
+  }
+  .login_panel p{
+    font-family: 'Dancing Script', cursive;
+    color: #c7c7c7;
+    font-size: 30px;
+  }
+  .login_panel input{
+    width: 40%;
+    height: 20px;
+    background-color: #333;
+    color: #c7c7c7;
+    border: 2px solid #c7c7c7;
+    border-radius: 10px;
+    box-sizing: border-box;
+    animation: resize_to_normal ease-in-out 0.5s forwards;
+  }
+  
+  .login_panel input:hover{
+    animation: resize ease-in-out 0.5s forwards;
+  }
+
+ 
+  .login_panel h3{
+    font-size: 15px;
+    color: #c7c7c7;
+  }
+  .login_panel button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(85, 125, 255);
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #c7c7c7;
+  }
+  .login_panel button:hover{
+    background-color: #c7c7c7;
+    color: #333;
+  }
+
+  @keyframes resize {
+    from{
+      width: 40%;
+      height: 20px;
+      border-color: none;
+    }
+    to{
+      width: 50%;
+      height: 25px;
+      border-color: rgb(85, 125, 255);
+    }
+  }
+
+  @keyframes resize_to_normal {
+    from{
+      width: 50%;
+      height: 25px;
+      border-color: rgb(85, 125, 255);
+    }
+    to{
+      width: 40%;
+      height: 20px;
+      border-color: none;
+    }
+  }
